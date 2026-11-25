@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Gemini 与 Claude 提示词调优",
+    "description": "为 Gemini 与 Claude 模型精简系统提示词并改写身份段落，避免冗长的工具说明把生成任务压成占位文件；同时替换上游会拒绝的字面词组。"
+  }
+}

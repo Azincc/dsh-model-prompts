@@ -1,0 +1,13 @@
+# Bundle patch layer: mounts the model-family prompt tuning row.
+#
+# `models` is pinned here so the shipped scope is visible in the profile config.
+# Any omitted field falls back to the code defaults in index.js; the row config
+# is merged over those defaults (arrays and `scrub` replace, object maps merge),
+# so a partial config such as this one is complete enough to activate.
+- insert:
+    - id: model-prompts
+      name: '@local/dsh-model-prompts'
+      config:
+        models:
+          - 'gemini*'
+          - 'claude*'

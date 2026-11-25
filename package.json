@@ -1,0 +1,46 @@
+{
+  "name": "@local/dsh-model-prompts",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "DeepSeek Harness Host bundle: shortens and rewrites the system prompt for Gemini and Claude models so long tool instructions cannot turn a generation request into a placeholder file.",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "cordis",
+    "system-prompt",
+    "gemini",
+    "claude"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Azincc/dsh-model-prompts.git"
+  },
+  "homepage": "https://github.com/Azincc/dsh-model-prompts",
+  "bugs": {
+    "url": "https://github.com/Azincc/dsh-model-prompts/issues"
+  },
+  "scripts": {
+    "test": "node verify.mjs"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "verify.mjs",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

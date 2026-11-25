@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Gemini and Claude prompt tuning",
+    "description": "Shortens the system prompt for Gemini and Claude models and rewrites the harness identity, so long tool instructions cannot turn a generation request into a placeholder file; also replaces the literal phrase upstreams reject."
+  }
+}
